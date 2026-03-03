@@ -8,7 +8,7 @@ Docker container that watches a directory for audio files and transcribes them w
 docker run -d \
   -v /path/to/audio:/data \
   -e HF_TOKEN=hf_your_token \
-  ghcr.io/YOUR_GITHUB_USER/whisperroles:latest
+  ghcr.io/protos-galaxias/whisperroles:latest
 ```
 
 Drop an `.mp3` (or `.wav`, `.m4a`, `.flac`, `.ogg`) into the mounted directory — a `.txt` file with the transcript will appear next to it.
