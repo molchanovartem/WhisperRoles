@@ -65,7 +65,7 @@ docker run -d \
   --restart unless-stopped \
   -v ~/transcribe:/data \
   -e HF_TOKEN=hf_сюда_вставь_свой_токен \
-  ghcr.io/protos-galaxias/whisperroles:latest
+  ghcr.io/molchanovartem/whisperroles:latest
 ```
 
 Первый запуск скачает образ (~3 GB) и модели (~1 GB) — это займёт несколько минут.
@@ -110,7 +110,7 @@ docker run -d \
   -e HF_TOKEN=hf_xxx \
   -e WHISPER_MODEL=medium \
   -e LANGUAGE=ru \
-  ghcr.io/protos-galaxias/whisperroles:latest
+  ghcr.io/molchanovartem/whisperroles:latest
 ```
 
 | Параметр | По умолчанию | Описание |
@@ -149,7 +149,7 @@ docker start whisper-roles
 docker rm -f whisper-roles
 
 # Обновить до последней версии
-docker pull ghcr.io/protos-galaxias/whisperroles:latest
+docker pull ghcr.io/molchanovartem/whisperroles:latest
 docker rm -f whisper-roles
 # ... и запустить заново командой выше
 ```
