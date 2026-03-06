@@ -1,7 +1,7 @@
-__pycache__/
-*.pyc
+node_modules/
 .env
 *.mp3
 *.wav
 *.m4a
 *.processing
+*.error
